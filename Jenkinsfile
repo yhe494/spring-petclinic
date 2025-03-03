@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/yhe494/spring-petclinic.git'
+                git branch: 'main', 'https://github.com/yhe494/spring-petclinic.git'
             }
         }
 
